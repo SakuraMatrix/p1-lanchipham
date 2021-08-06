@@ -22,3 +22,18 @@ The Budget Reminder is an app where users can lay out a budget, track their expe
 8)	Entertainment
 9)	Personal Care
 10)	Miscellaneous
+
+# Technology Stack
+1) Maven
+2) Junit 
+3) Java 16
+4) Reactor Netty 
+5) Spring Framework
+6) Amazon Web Services 
+7) GitHub (SakuraMatrix)
+8) SLF4J: Logback Classic
+9) Apache Cassandra w/ Datastax driver
+
+
+# How to use: 
+Run ```mvn clean exec:java``` in package directory
