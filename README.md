@@ -24,8 +24,8 @@ The Budget Reminder is an app where users can lay out a budget, track their expe
 10)	Miscellaneous
 
 # Technology Stack
-1) Maven
-2) Junit 
+1) JUnit
+2) Maven 
 3) Java 16
 4) Reactor Netty 
 5) Spring Framework
