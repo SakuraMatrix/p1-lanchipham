@@ -1,4 +1,4 @@
-package com.github.SakuraMatrix.p1lanchipham.domain;
+package com.github.SakuraMatrix.p1lanchipham.repository;
 
 import java.util.Scanner;
 

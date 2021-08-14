@@ -1,11 +1,13 @@
 CREATE KEYSPACE IF NOT EXISTS budgetReminder WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
 
-        USE budgetReminder;
+USE budgetReminder;
 
-        CREATE TABLE IF NOT EXISTS category (
-        category_id int,
+CREATE TABLE IF NOT EXISTS categories (
+        categoryId int,
         name text,
         budgetAmount double,
-        limit double,
-        PRIMARY KEY (category_id, name)
+        currentUse double,
+        alertAmount double,
+        status text,
+        PRIMARY KEY (categoryId, name)
         );
