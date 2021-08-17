@@ -14,25 +14,25 @@ public class enterExp {
         System.out.println(housing);
         System.out.println("Utilities: $");
         double utilities = sc.nextDouble();
-        System.out.println(housing);
+        System.out.println(utilities);
         System.out.println("Food: $");
         double food = sc.nextDouble();
-        System.out.println(housing);
+        System.out.println(food);
         System.out.println("Transportation: $");
         double transportation = sc.nextDouble();
-        System.out.println(housing);
+        System.out.println(transportation);
         System.out.println("Medical: $");
         double medical = sc.nextDouble();
-        System.out.println(housing);
+        System.out.println(medical);
         System.out.println("Savings: $");
-        double savings = sc.nextDouble();
-        System.out.println(housing);
+        double miscellaneous = sc.nextDouble();
+        System.out.println(miscellaneous);
         System.out.println("Entertainment: $");
         double entertainment = sc.nextDouble();
-        System.out.println(housing);
+        System.out.println(entertainment);
         System.out.println("Personal Care: $");
         double personalCare = sc.nextDouble();
-        System.out.println(housing);
+        System.out.println(personalCare);
         sc.close();
     }
 }

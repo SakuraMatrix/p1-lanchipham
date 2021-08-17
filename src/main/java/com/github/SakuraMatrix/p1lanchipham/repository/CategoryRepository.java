@@ -24,7 +24,7 @@ public class CategoryRepository {
     }
 
     public Category setInitialValues(Category category) {
-        SimpleStatement setInitial = SimpleStatement.builder("INSERT INTO budget.categories (budgetAmount, alertAmount, currentUse) values (?, ?, ?)")
+        SimpleStatement setInitial = SimpleStatement.builder("INSERT budget.categories (budgetAlert, alertAmount, currentUse) values (?, ?, ?)")
                 .addPositionalValues(category.getBudget(), category.getAlert(), category.getCurrentUse())
                 .build();
         Flux.from(session.executeReactive(setInitial)).subscribe();
@@ -32,25 +32,17 @@ public class CategoryRepository {
     }
 
     public Category updateCurrentUse(Category category) {
-        SimpleStatement updateQuery = SimpleStatement.builder("INSERT INTO budget.categories (currentUse) values (?)")
-                .addPositionalValues(category.getCurrentUse())
+        SimpleStatement updateQuery = SimpleStatement.builder("UPDATE budget.categories SET currentUse = ? WHERE categoryId = ? IF EXISTS")
+                .addPositionalValues(category.getCurrentUse(), category.getId())
                 .build();
         Flux.from(session.executeReactive(updateQuery)).subscribe();
         return category;
     }
 
-//    public Mono<Category> update(int id) {
-//        SimpleStatement updateQuery = update(id)
-//                .setColumn("spent", bindMarker())
-//                .whereColumn("currentUse").isEqualTo(bindMarker())
-//                .build();
-//        return Mono.from(session.executeReactive(updateQuery);
-//    }
-
-    public static class printWelcome {
-        public static void printHello(){
-            System.out.println("***********************");
-            System.out.println("Welcome to the Budget Reminder");
-        }
-    }
+    // public Category update(int id) {
+    //     SimpleStatement updateQuery = update(id)
+    //             .setColumn("currentUse", bindMarker())
+    //             .whereColumn("categoryId").isEqualTo(bindMarker())
+    //             .build();
+    // }
 }

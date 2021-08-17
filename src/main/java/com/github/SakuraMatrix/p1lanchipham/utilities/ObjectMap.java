@@ -12,13 +12,13 @@ import java.io.IOException;
 public class ObjectMap {
     static final ObjectMapper objMapper = new ObjectMapper();
     static ByteBuf toByteBuf(Object obj) {
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
         try {
-            objMapper.writeValue(baos, obj);
+            objMapper.writeValue(out, obj);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return ByteBufAllocator.DEFAULT.buffer().writeBytes(baos.toByteArray());
+        return ByteBufAllocator.DEFAULT.buffer().writeBytes(out.toByteArray());
     }
 
     static Category readCategory(String string) {

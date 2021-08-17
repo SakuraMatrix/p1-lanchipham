@@ -13,17 +13,16 @@ import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-    @Configuration
-    @ComponentScan
-    public class AppConfig {
+@Configuration
+@ComponentScan
+public class AppConfig {
 
         @Autowired
         CategoryService categoryService;
 
-
         @Bean
         public CqlSession session() {
-            return CqlSession.builder().build();
+                return CqlSession.builder().build();
         }
 
         @Bean
@@ -32,6 +31,7 @@ import java.nio.file.Paths;
             Path errorHTML = Paths.get(App.class.getResource("/error.html").toURI());
 
             return HttpServer.create()
+                    .host("localhost")
                     .port(8080)
                     .route(routes ->
                             routes.get("/categories", (req, res) ->
