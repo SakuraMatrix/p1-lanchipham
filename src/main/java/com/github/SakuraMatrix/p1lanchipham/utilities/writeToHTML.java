@@ -14,6 +14,7 @@ public class writeToHTML {
         String body = "This is the body";
         htmlString = htmlString.replace("$title", title);
         htmlString = htmlString.replace("$body", body);
+        //TODO: replace with individual tags
         File newHtmlFile = new File("C:\\Users\\LanChi\\Desktop\\budget.html");
         FileUtils.writeStringToFile(newHtmlFile, htmlString, StandardCharsets.UTF_8.name());
 

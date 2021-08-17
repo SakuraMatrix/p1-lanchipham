@@ -3,9 +3,13 @@ package com.github.SakuraMatrix.p1lanchipham.repository;
 import com.datastax.oss.driver.api.core.CqlSession;
 import com.datastax.oss.driver.api.core.cql.SimpleStatement;
 import com.github.SakuraMatrix.p1lanchipham.domain.Category;
+
+import org.springframework.stereotype.Repository;
+
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+@Repository
 public class CategoryRepository {
     private CqlSession session;
 

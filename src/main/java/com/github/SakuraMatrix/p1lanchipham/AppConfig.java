@@ -17,8 +17,7 @@ import java.nio.file.Paths;
 @ComponentScan
 public class AppConfig {
 
-        @Autowired
-        CategoryService categoryService;
+        @Autowired CategoryService categoryService;
 
         @Bean
         public CqlSession session() {

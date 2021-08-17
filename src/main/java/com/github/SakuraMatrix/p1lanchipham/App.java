@@ -21,7 +21,7 @@ public class App {
 
         AnnotationConfigApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
         appContext.getBean(DisposableServer.class).onDispose().block();
-        appContext.close();
+        //appContext.close();
     }
 
     public static final ObjectMapper objMapper = new ObjectMapper();

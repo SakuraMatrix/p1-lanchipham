@@ -4,10 +4,8 @@ import java.util.Scanner;
 
 public class enterExp {
     public static void categories(){
-        System.out.println("Please enter in your monthly income.");
+        System.out.println("Welcome to the BudgetReminder.");
         Scanner sc = new Scanner(System.in);
-        double income = sc.nextDouble();
-        System.out.println(income);
         System.out.println("Please enter in your budget for the following categories.");
         System.out.println("Housing: $");
         double housing = sc.nextDouble();
