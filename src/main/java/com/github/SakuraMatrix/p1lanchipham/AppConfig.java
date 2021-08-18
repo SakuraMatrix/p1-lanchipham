@@ -19,10 +19,10 @@ public class AppConfig {
 
         @Autowired CategoryService categoryService;
 
-        @Bean
-        public CqlSession session() {
-                return CqlSession.builder().build();
-        }
+        // @Bean
+        // public static CqlSession session() {
+        //         return CqlSession.builder().build();
+        // }
 
         @Bean
         public DisposableServer server() throws URISyntaxException {

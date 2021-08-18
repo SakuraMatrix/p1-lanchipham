@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="true">
+  <!--<property name="LOGS" value="./logs" />>
+  <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <Pattern>
+      %d{yyyy-MM-dd HH:mm:ss} {%thread} %-5lvel %logger{36} - %msg%n
+      </Pattern>
+    </layout>
+  </appender> -->
   <appender name="FILE" class="ch.qos.logback.core.FileAppender">
     <File>events.log</File>
     <encoder>
-      <Pattern>%d{yyyy-MM-dd HH:mm:ss} {%thread} %-5level %logger{36} - msg%n %p %t %c - %m%n</Pattern>
+      <Pattern>%d %p %t %c - %m%n</Pattern>
     </encoder>
   </appender>
+  <!--<appender name="RfAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${LOGS}/budgetLogs.log</file>
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <Pattern>%d %p %C{.1} {%} %m%n</Pattern>
+    </encoder>
+  </appender> -->
   <logger name="com.github.sakuramatrix.p1-lanchipham.domain.App" />
-  <logger name="log" />
+  <logger name="log" /> 
   <root level="debug">
     <appender-ref ref="FILE" />
   </root>
+  <logger name="com.github.SakuraMatrix.p1lanchipham" level="trace" additivity="false">
+    <appender-ref ref="RfAppender" />
+    <appender-ref ref="Console" />
+  </logger>
 </configuration>

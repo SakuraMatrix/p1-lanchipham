@@ -15,8 +15,9 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 
 public class App {
-    public static void main(String[] args) throws ClassNotFoundException, URISyntaxException {
-        Logger log = LoggerFactory.getLogger(App.class);
+
+    private static final Logger log = LoggerFactory.getLogger(App.class);
+    public static void main(String[] args) throws ClassNotFoundException, URISyntaxException {       
         log.info("Starting com.github.SakuraMatrix.p1-lanchipham...");
 
         AnnotationConfigApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);

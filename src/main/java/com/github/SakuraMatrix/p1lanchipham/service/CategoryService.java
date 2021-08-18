@@ -23,7 +23,7 @@ import reactor.core.publisher.Mono;
         }
 
         public Mono<Category> get(String id) {
-            log.info("retrieving specified category...");
+            log.info("retrieving category with categoryId " + id);
             return categoryRepository.get(Integer.parseInt(id));
         }
 

@@ -22,19 +22,19 @@ public class CategoryRepository {
     public Flux<Category> getAll() {
         log.info("retrieving all categories from database...");
         return Flux.from(session.executeReactive("SELECT * FROM budget.categories"))
-                .map(row -> new Category(row.getInt("id"), row.getString("name"), row.getDouble("budget_amount"), row.getDouble("alert_amount"), row.getDouble("current_use"), row.getString("status")));
+                .map(row -> new Category(row.getInt("categoryId"), row.getString("name"), row.getDouble("budgetAmount"), row.getDouble("alertAmount"), row.getDouble("currentUse"), row.getString("status")));
     }
 
     public Mono<Category> get(int id) {
-        log.info("retrieving category from database by id...");
-        return Mono.from(session.executeReactive("SELECT * FROM budget.categories WHERE id = " + id))
-                .map(row -> new Category(row.getInt("id"), row.getString("name"), row.getDouble("budget_amount"), row.getDouble("alert_amount"), row.getDouble("current_use"), row.getString("status")));
+        log.info("retrieving category from database by categoryId...");
+        return Mono.from(session.executeReactive("SELECT * FROM budget.categories WHERE categoryId = " + id))
+                .map(row -> new Category(row.getInt("categoryId"), row.getString("name"), row.getDouble("budgetAmount"), row.getDouble("alertAmount"), row.getDouble("currentUse"), row.getString("status")));
     }
 
     public Category setInitialValues(Category category) {
         log.info("setting initial values for budget, alert, and current use...");
-        SimpleStatement setInitial = SimpleStatement.builder("INSERT budget.categories (budget_alert, alert_amount, current_use) values (?, ?, ?)")
-                .addPositionalValues(category.getBudget(), category.getAlert(), category.getCurrentUse())
+        SimpleStatement setInitial = SimpleStatement.builder("INSERT budget.categories (budgetAmount, alertAmount, currentUse) values (?, ?, ?)")
+                .addPositionalValues(category.getBudget(), category.getAlert(), category.getCurrent())
                 .build();
         Flux.from(session.executeReactive(setInitial)).subscribe();
         return category;
@@ -42,17 +42,17 @@ public class CategoryRepository {
 
     public Category updateCurrentUse(Category category) {
         log.info("updating current use category...");
-        SimpleStatement updateQuery = SimpleStatement.builder("UPDATE budget.categories SET current_use = ? WHERE id = ? IF EXISTS")
+        SimpleStatement updateQuery = SimpleStatement.builder("UPDATE budget.categories SET currentUse = ? WHERE categoryId = ? IF EXISTS")
                 .addPositionalValues(category.getCurrent(), category.getId())
                 .build();
         Flux.from(session.executeReactive(updateQuery)).subscribe();
         return category;
     }
 
-    // public Category update(int id) {
-    //     SimpleStatement updateQuery = update(id)
-    //             .setColumn("current_use", bindMarker())
-    //             .whereColumn("id").isEqualTo(bindMarker())
+    // public Category update(int categoryId) {
+    //     SimpleStatement updateQuery = update(categoryId)
+    //             .setColumn("currentUse", bindMarker())
+    //             .whereColumn("categoryId").isEqualTo(bindMarker())
     //             .build();
     // }
 }

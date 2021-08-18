@@ -96,7 +96,7 @@ public Category(int id, String name, double budget, double alert, double current
         return status;
     }
 
-    public void setId(String status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 }
