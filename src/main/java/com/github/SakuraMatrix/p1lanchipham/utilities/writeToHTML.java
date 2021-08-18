@@ -10,9 +10,7 @@ public class writeToHTML {
         File htmlTemplateFile = new File("src/main/resources/template.html");
         String htmlString = FileUtils.readFileToString(htmlTemplateFile, StandardCharsets.UTF_8.name());
 
-        String title = "New Page";
-        String body = "This is the body";
-        htmlString = htmlString.replace("$title", title);
+        //String body = "This is the body";
         htmlString = htmlString.replace("$body", body);
         //TODO: replace with individual tags
         File newHtmlFile = new File("C:\\Users\\LanChi\\Desktop\\budget.html");

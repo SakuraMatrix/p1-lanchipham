@@ -1,6 +1,5 @@
 package com.github.SakuraMatrix.p1lanchipham.utilities;
 import com.datastax.oss.driver.api.core.CqlSession;
-//import com.datastax.oss.driver.api.core.cql.*;
 import com.datastax.oss.driver.api.querybuilder.SchemaBuilder;
 import com.datastax.oss.driver.api.querybuilder.schema.CreateKeyspace;
 

@@ -1,0 +1,536 @@
+2021-08-17 21:02:43 {com.github.SakuraMatrix.p1lanchipham.App.main()} INFO  c.g.SakuraMatrix.p1lanchipham.App - msg
+ INFO com.github.SakuraMatrix.p1lanchipham.App.main() com.github.SakuraMatrix.p1lanchipham.App - Starting com.github.SakuraMatrix.p1-lanchipham...
+2021-08-17 21:02:43 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG o.s.c.a.AnnotationConfigApplicationContext - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@31ac99b3
+2021-08-17 21:02:43 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG o.s.b.f.s.DefaultListableBeanFactory - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-08-17 21:02:43 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [C:\Users\LanChi\IdeaProjects\p1-lanchipham\target\classes\com\github\SakuraMatrix\p1lanchipham\repository\CategoryRepository.class]
+2021-08-17 21:02:43 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [C:\Users\LanChi\IdeaProjects\p1-lanchipham\target\classes\com\github\SakuraMatrix\p1lanchipham\service\CategoryService.class]
+2021-08-17 21:02:43 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG o.s.b.f.s.DefaultListableBeanFactory - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-08-17 21:02:43 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG o.s.b.f.s.DefaultListableBeanFactory - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-08-17 21:02:43 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG o.s.b.f.s.DefaultListableBeanFactory - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-08-17 21:02:43 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG o.s.b.f.s.DefaultListableBeanFactory - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'appConfig'
+2021-08-17 21:02:43 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG o.s.b.f.s.DefaultListableBeanFactory - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'categoryService'
+2021-08-17 21:02:43 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG o.s.b.f.s.DefaultListableBeanFactory - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'categoryRepository'
+2021-08-17 21:02:43 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG o.s.b.f.s.DefaultListableBeanFactory - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'session'
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.u.i.l.InternalLoggerFactory - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.u.i.InternalThreadLocalMap - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.u.i.InternalThreadLocalMap - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} INFO  c.d.o.d.i.c.DefaultMavenCoordinates - msg
+ INFO com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.DefaultMavenCoordinates - DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.13.0
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.c.session.DefaultSession - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.session.DefaultSession - Creating new session s0 (1 live instances)
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.c.MultithreadEventLoopGroup - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG io.netty.channel.nio.NioEventLoop - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG io.netty.channel.nio.NioEventLoop - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent0 - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent0 - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent0 - Java version: 15
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent0 - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent0 - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent0 - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent0 - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent0 - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent0 - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @78ee94ab
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent0 - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent - maxDirectMemory: 2086666240 bytes (maybe)
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\LanChi\AppData\Local\Temp (java.io.tmpdir)
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent - Platform: Windows
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG io.netty.util.internal.CleanerJava9 - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.internal.PlatformDependent - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG io.netty.util.ResourceLeakDetector - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG io.netty.util.ResourceLeakDetector - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG i.n.util.ResourceLeakDetectorFactory - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@54ea2225
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.util.Reflection - Creating a ReconnectionPolicy from config option advanced.reconnection-policy.class
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.util.Reflection - Building from unqualified name ExponentialReconnectionPolicy
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.util.Reflection - Trying with default package com.datastax.oss.driver.internal.core.connection.ExponentialReconnectionPolicy
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@3a22784d for class com.datastax.oss.driver.internal.core.metadata.DistanceEvent
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@4933fb84 for class com.datastax.oss.driver.internal.core.metadata.NodeStateEvent
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.c.m.s.q.RuleBasedKeyspaceFilter - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.metadata.schema.queries.RuleBasedKeyspaceFilter - [s0] No server-side filtering
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.metadata.MetadataManager$$Lambda$247/0x0000000800f19a58@274bfd27 for class com.datastax.oss.driver.internal.core.config.ConfigChangeEvent
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@7da8fee3 for class com.datastax.oss.driver.internal.core.channel.ChannelEvent
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@6e6ead99 for class com.datastax.oss.driver.internal.core.metadata.TopologyEvent
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@133b0b0 for class com.datastax.oss.driver.internal.core.metadata.schema.events.AggregateChangeEvent
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@312d0639 for class com.datastax.oss.driver.internal.core.metadata.schema.events.FunctionChangeEvent
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@31917e92 for class com.datastax.oss.driver.internal.core.metadata.schema.events.KeyspaceChangeEvent
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@5c3e829d for class com.datastax.oss.driver.internal.core.metadata.schema.events.TableChangeEvent
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@49a29775 for class com.datastax.oss.driver.internal.core.metadata.schema.events.TypeChangeEvent
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@306b26f7 for class com.datastax.oss.driver.internal.core.metadata.schema.events.ViewChangeEvent
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@34ca11d0 for class com.datastax.oss.driver.internal.core.metadata.NodeStateEvent
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.util.Reflection - Could not load org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversal with loader null: java.lang.ClassNotFoundException: org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversal
+java.lang.ClassNotFoundException: org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversal
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:435)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:589)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:377)
+	at com.datastax.oss.driver.internal.core.util.Reflection.loadClass(Reflection.java:57)
+	at com.datastax.oss.driver.internal.core.util.DefaultDependencyChecker.lambda$isPresent$0(DefaultDependencyChecker.java:48)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.datastax.oss.driver.internal.core.util.DefaultDependencyChecker.isPresent(DefaultDependencyChecker.java:41)
+	at com.datastax.oss.driver.internal.core.session.BuiltInRequestProcessors.createDefaultProcessors(BuiltInRequestProcessors.java:47)
+	at com.datastax.oss.driver.internal.core.context.DefaultDriverContext.buildRequestProcessorRegistry(DefaultDriverContext.java:512)
+	at com.datastax.oss.driver.internal.core.util.concurrent.LazyReference.get(LazyReference.java:55)
+	at com.datastax.oss.driver.internal.core.context.DefaultDriverContext.getRequestProcessorRegistry(DefaultDriverContext.java:905)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession.<init>(DefaultSession.java:121)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession.init(DefaultSession.java:88)
+	at com.datastax.oss.driver.api.core.session.SessionBuilder.buildDefaultSessionAsync(SessionBuilder.java:903)
+	at com.datastax.oss.driver.api.core.session.SessionBuilder.buildAsync(SessionBuilder.java:817)
+	at com.datastax.oss.driver.api.core.session.SessionBuilder.build(SessionBuilder.java:835)
+	at com.github.SakuraMatrix.p1lanchipham.AppConfig.session(AppConfig.java:24)
+	at com.github.SakuraMatrix.p1lanchipham.AppConfig$$EnhancerBySpringCGLIB$$3088d882.CGLIB$session$1(<generated>)
+	at com.github.SakuraMatrix.p1lanchipham.AppConfig$$EnhancerBySpringCGLIB$$3088d882$$FastClassBySpringCGLIB$$7e860477.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.github.SakuraMatrix.p1lanchipham.AppConfig$$EnhancerBySpringCGLIB$$3088d882.session(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:93)
+	at com.github.SakuraMatrix.p1lanchipham.App.main(App.java:22)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.c.s.BuiltInRequestProcessors - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.session.BuiltInRequestProcessors - Tinkerpop was not found on the classpath: graph extensions will not be available
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@4c3abe87 for class com.datastax.oss.driver.internal.core.metadata.DistanceEvent
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@5785d3e3 for class com.datastax.oss.driver.internal.core.metadata.NodeStateEvent
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@7213af42 for class com.datastax.oss.driver.internal.core.metadata.TopologyEvent
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.session.PoolManager - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.session.PoolManager - [s0] Prepared statements cache configured to use weak values
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.util.Reflection - Creating a MetricsFactory from config option advanced.metrics.factory.class
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.util.Reflection - Building from unqualified name DefaultMetricsFactory
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.util.Reflection - Trying with default package com.datastax.oss.driver.internal.core.metrics.DefaultMetricsFactory
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.c.m.DropwizardMetricsFactory - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.metrics.DropwizardMetricsFactory - [s0] All metrics are disabled, Session.getMetrics will be empty
+2021-08-17 21:02:44 {com.github.SakuraMatrix.p1lanchipham.App.main()} DEBUG c.d.o.d.i.c.m.DefaultMetricsFactory - msg
+ DEBUG com.github.SakuraMatrix.p1lanchipham.App.main() com.datastax.oss.driver.internal.core.metrics.DefaultMetricsFactory - [s0] Using DropwizardMetricsFactory
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.c.session.DefaultSession - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.session.DefaultSession - [s0] Starting initialization
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Creating a LoadBalancingPolicy from config option basic.load-balancing-policy.class
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Building from unqualified name DefaultLoadBalancingPolicy
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Trying with default package com.datastax.oss.driver.internal.core.loadbalancing.DefaultLoadBalancingPolicy
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Creating a RetryPolicy from config option advanced.retry-policy.class
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Building from unqualified name DefaultRetryPolicy
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Trying with default package com.datastax.oss.driver.internal.core.retry.DefaultRetryPolicy
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Creating a SpeculativeExecutionPolicy from config option advanced.speculative-execution-policy.class
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Building from unqualified name NoSpeculativeExecutionPolicy
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Trying with default package com.datastax.oss.driver.internal.core.specex.NoSpeculativeExecutionPolicy
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Creating a AddressTranslator from config option advanced.address-translator.class
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Building from unqualified name PassThroughAddressTranslator
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Trying with default package com.datastax.oss.driver.internal.core.addresstranslation.PassThroughAddressTranslator
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Creating a RequestThrottler from config option advanced.throttler.class
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Building from unqualified name PassThroughRequestThrottler
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Trying with default package com.datastax.oss.driver.internal.core.session.throttling.PassThroughRequestThrottler
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Creating a AuthProvider from config option advanced.auth-provider.class
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Option is not defined, skipping
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Creating a SslEngineFactory from config option advanced.ssl-engine-factory.class
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Option is not defined, skipping
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Creating a TimestampGenerator from config option advanced.timestamp-generator.class
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Building from unqualified name AtomicTimestampGenerator
+2021-08-17 21:02:44 {s0-admin-0} DEBUG c.d.o.d.i.core.util.Reflection - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.util.Reflection - Trying with default package com.datastax.oss.driver.internal.core.time.AtomicTimestampGenerator
+2021-08-17 21:02:45 {s0-admin-0} DEBUG c.d.o.d.internal.core.os.JnrLibc - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.os.JnrLibc - Error calling gettimeofday()
+java.lang.IllegalStateException: allocateTimeval is not implemented in jnr-posix
+	at jnr.posix.util.DefaultPOSIXHandler.unimplementedError(DefaultPOSIXHandler.java:28)
+	at jnr.posix.JavaPOSIX.allocateTimeval(JavaPOSIX.java:805)
+	at jnr.posix.LazyPOSIX.allocateTimeval(LazyPOSIX.java:631)
+	at com.datastax.oss.driver.internal.core.os.JnrLibc.gettimeofdayImpl(JnrLibc.java:80)
+	at com.datastax.oss.driver.internal.core.os.JnrLibc.catchAll(JnrLibc.java:69)
+	at com.datastax.oss.driver.internal.core.os.JnrLibc.lambda$loadPosix$2(JnrLibc.java:60)
+	at java.base/java.util.Optional.flatMap(Optional.java:287)
+	at com.datastax.oss.driver.internal.core.os.JnrLibc.loadPosix(JnrLibc.java:60)
+	at com.datastax.oss.driver.internal.core.os.JnrLibc.<init>(JnrLibc.java:35)
+	at com.datastax.oss.driver.internal.core.os.Native$LibcLoader.load(Native.java:42)
+	at com.datastax.oss.driver.internal.core.os.Native.<clinit>(Native.java:59)
+	at com.datastax.oss.driver.internal.core.time.Clock.getInstance(Clock.java:41)
+	at com.datastax.oss.driver.internal.core.time.MonotonicTimestampGenerator.buildClock(MonotonicTimestampGenerator.java:109)
+	at com.datastax.oss.driver.internal.core.time.MonotonicTimestampGenerator.<init>(MonotonicTimestampGenerator.java:43)
+	at com.datastax.oss.driver.internal.core.time.AtomicTimestampGenerator.<init>(AtomicTimestampGenerator.java:52)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at com.datastax.oss.driver.internal.core.util.Reflection.resolveClass(Reflection.java:329)
+	at com.datastax.oss.driver.internal.core.util.Reflection.buildFromConfig(Reflection.java:235)
+	at com.datastax.oss.driver.internal.core.util.Reflection.buildFromConfig(Reflection.java:110)
+	at com.datastax.oss.driver.internal.core.context.DefaultDriverContext.buildTimestampGenerator(DefaultDriverContext.java:377)
+	at com.datastax.oss.driver.internal.core.util.concurrent.LazyReference.get(LazyReference.java:55)
+	at com.datastax.oss.driver.internal.core.context.DefaultDriverContext.getTimestampGenerator(DefaultDriverContext.java:773)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession$SingleThreaded.init(DefaultSession.java:349)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession$SingleThreaded.access$1100(DefaultSession.java:300)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession.lambda$init$0(DefaultSession.java:146)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.PromiseTask.run(PromiseTask.java:106)
+	at io.netty.channel.DefaultEventLoop.run(DefaultEventLoop.java:54)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-08-17 21:02:45 {s0-admin-0} INFO  c.d.o.d.internal.core.time.Clock - msg
+ INFO s0-admin-0 com.datastax.oss.driver.internal.core.time.Clock - Could not access native clock (see debug logs for details), falling back to Java system clock
+2021-08-17 21:02:45 {s0-admin-0} INFO  c.d.o.d.i.c.metadata.MetadataManager - msg
+ INFO s0-admin-0 com.datastax.oss.driver.internal.core.metadata.MetadataManager - [s0] No contact points provided, defaulting to /127.0.0.1:9042
+2021-08-17 21:02:45 {s0-admin-0} DEBUG c.d.o.d.i.c.metadata.MetadataManager - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.metadata.MetadataManager - [s0] Adding initial contact points [Node(endPoint=/127.0.0.1:9042, hostId=null, hashCode=12430378)]
+2021-08-17 21:02:45 {s0-admin-1} DEBUG c.d.o.d.i.c.c.ControlConnection - msg
+ DEBUG s0-admin-1 com.datastax.oss.driver.internal.core.control.ControlConnection - [s0] Initializing with event types [SCHEMA_CHANGE, STATUS_CHANGE, TOPOLOGY_CHANGE]
+2021-08-17 21:02:45 {s0-admin-1} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG s0-admin-1 com.datastax.oss.driver.internal.core.context.EventBus - [s0] Registering com.datastax.oss.driver.internal.core.metadata.LoadBalancingPolicyWrapper$$Lambda$288/0x0000000800f55518@1aabdfca for class com.datastax.oss.driver.internal.core.metadata.NodeStateEvent
+2021-08-17 21:02:45 {s0-admin-1} DEBUG c.d.o.d.i.c.c.ControlConnection - msg
+ DEBUG s0-admin-1 com.datastax.oss.driver.internal.core.control.ControlConnection - [s0] Trying to establish a connection to Node(endPoint=/127.0.0.1:9042, hostId=null, hashCode=12430378)
+2021-08-17 21:02:45 {s0-admin-1} DEBUG i.n.buffer.PooledByteBufAllocator - msg
+ DEBUG s0-admin-1 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
+2021-08-17 21:02:45 {s0-admin-1} DEBUG i.n.buffer.PooledByteBufAllocator - msg
+ DEBUG s0-admin-1 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
+2021-08-17 21:02:45 {s0-admin-1} DEBUG i.n.buffer.PooledByteBufAllocator - msg
+ DEBUG s0-admin-1 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2021-08-17 21:02:45 {s0-admin-1} DEBUG i.n.buffer.PooledByteBufAllocator - msg
+ DEBUG s0-admin-1 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2021-08-17 21:02:45 {s0-admin-1} DEBUG i.n.buffer.PooledByteBufAllocator - msg
+ DEBUG s0-admin-1 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2021-08-17 21:02:45 {s0-admin-1} DEBUG i.n.buffer.PooledByteBufAllocator - msg
+ DEBUG s0-admin-1 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2021-08-17 21:02:45 {s0-admin-1} DEBUG i.n.buffer.PooledByteBufAllocator - msg
+ DEBUG s0-admin-1 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2021-08-17 21:02:45 {s0-admin-1} DEBUG i.n.buffer.PooledByteBufAllocator - msg
+ DEBUG s0-admin-1 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2021-08-17 21:02:45 {s0-admin-1} DEBUG i.n.buffer.PooledByteBufAllocator - msg
+ DEBUG s0-admin-1 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2021-08-17 21:02:45 {s0-admin-1} DEBUG i.n.buffer.PooledByteBufAllocator - msg
+ DEBUG s0-admin-1 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2021-08-17 21:02:45 {s0-admin-1} DEBUG i.n.buffer.PooledByteBufAllocator - msg
+ DEBUG s0-admin-1 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2021-08-17 21:02:45 {s0-admin-1} DEBUG i.n.buffer.PooledByteBufAllocator - msg
+ DEBUG s0-admin-1 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2021-08-17 21:02:45 {s0-admin-1} DEBUG io.netty.buffer.ByteBufUtil - msg
+ DEBUG s0-admin-1 io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2021-08-17 21:02:45 {s0-admin-1} DEBUG io.netty.buffer.ByteBufUtil - msg
+ DEBUG s0-admin-1 io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2021-08-17 21:02:45 {s0-admin-1} DEBUG io.netty.buffer.ByteBufUtil - msg
+ DEBUG s0-admin-1 io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2021-08-17 21:02:45 {s0-admin-1} DEBUG io.netty.channel.DefaultChannelId - msg
+ DEBUG s0-admin-1 io.netty.channel.DefaultChannelId - -Dio.netty.processId: 22512 (auto-detected)
+2021-08-17 21:02:45 {s0-admin-1} DEBUG io.netty.util.NetUtil - msg
+ DEBUG s0-admin-1 io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2021-08-17 21:02:45 {s0-admin-1} DEBUG io.netty.util.NetUtil - msg
+ DEBUG s0-admin-1 io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2021-08-17 21:02:45 {s0-admin-1} DEBUG i.netty.util.NetUtilInitializations - msg
+ DEBUG s0-admin-1 io.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2021-08-17 21:02:45 {s0-admin-1} DEBUG io.netty.util.NetUtil - msg
+ DEBUG s0-admin-1 io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2021-08-17 21:02:45 {s0-admin-1} DEBUG io.netty.channel.DefaultChannelId - msg
+ DEBUG s0-admin-1 io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 00:15:5d:ff:fe:e6:e2:9e (auto-detected)
+2021-08-17 21:02:47 {s0-io-0} DEBUG c.d.o.d.i.c.c.ProtocolInitHandler - msg
+ DEBUG s0-io-0 com.datastax.oss.driver.internal.core.channel.ProtocolInitHandler - [s0|control|connecting...] Starting channel initialization
+2021-08-17 21:02:47 {s0-io-0} DEBUG io.netty.util.Recycler - msg
+ DEBUG s0-io-0 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2021-08-17 21:02:47 {s0-io-0} DEBUG io.netty.util.Recycler - msg
+ DEBUG s0-io-0 io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2021-08-17 21:02:47 {s0-io-0} DEBUG io.netty.util.Recycler - msg
+ DEBUG s0-io-0 io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2021-08-17 21:02:47 {s0-io-0} DEBUG io.netty.util.Recycler - msg
+ DEBUG s0-io-0 io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2021-08-17 21:02:47 {s0-io-0} DEBUG io.netty.util.Recycler - msg
+ DEBUG s0-io-0 io.netty.util.Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+2021-08-17 21:02:47 {s0-io-0} DEBUG io.netty.buffer.AbstractByteBuf - msg
+ DEBUG s0-io-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+2021-08-17 21:02:47 {s0-io-0} DEBUG io.netty.buffer.AbstractByteBuf - msg
+ DEBUG s0-io-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+2021-08-17 21:02:47 {s0-io-0} DEBUG i.n.util.ResourceLeakDetectorFactory - msg
+ DEBUG s0-io-0 io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1630e4fb
+2021-08-17 21:02:47 {s0-admin-1} WARN  c.d.o.d.i.c.c.ControlConnection - msg
+ WARN s0-admin-1 com.datastax.oss.driver.internal.core.control.ControlConnection - [s0] Error connecting to Node(endPoint=/127.0.0.1:9042, hostId=null, hashCode=12430378), trying next node
+com.datastax.oss.driver.api.core.connection.ConnectionInitException: [s0|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (io.netty.channel.StacklessClosedChannelException)
+	at com.datastax.oss.driver.internal.core.channel.ProtocolInitHandler$InitRequest.fail(ProtocolInitHandler.java:356)
+	at com.datastax.oss.driver.internal.core.channel.ChannelHandlerRequest.writeListener(ChannelHandlerRequest.java:87)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:184)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:95)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:30)
+	at com.datastax.oss.driver.internal.core.channel.ChannelHandlerRequest.send(ChannelHandlerRequest.java:76)
+	at com.datastax.oss.driver.internal.core.channel.ProtocolInitHandler$InitRequest.send(ProtocolInitHandler.java:193)
+	at com.datastax.oss.driver.internal.core.channel.ProtocolInitHandler.onRealConnect(ProtocolInitHandler.java:124)
+	at com.datastax.oss.driver.internal.core.channel.ConnectInitHandler.lambda$connect$0(ConnectInitHandler.java:57)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:9042
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660)
+		at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:875)
+		at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0()(Unknown Source)
+2021-08-17 21:02:47 {s0-admin-1} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG s0-admin-1 com.datastax.oss.driver.internal.core.context.EventBus - [s0] Firing an instance of class com.datastax.oss.driver.internal.core.channel.ChannelEvent: ChannelEvent(CONTROL_CONNECTION_FAILED, Node(endPoint=/127.0.0.1:9042, hostId=null, hashCode=12430378))
+2021-08-17 21:02:47 {s0-admin-1} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG s0-admin-1 com.datastax.oss.driver.internal.core.context.EventBus - [s0] Notifying com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@7da8fee3 of ChannelEvent(CONTROL_CONNECTION_FAILED, Node(endPoint=/127.0.0.1:9042, hostId=null, hashCode=12430378))
+2021-08-17 21:02:47 {s0-admin-1} DEBUG c.d.o.d.i.c.m.NodeStateManager - msg
+ DEBUG s0-admin-1 com.datastax.oss.driver.internal.core.metadata.NodeStateManager - [s0] Processing ChannelEvent(CONTROL_CONNECTION_FAILED, Node(endPoint=/127.0.0.1:9042, hostId=null, hashCode=12430378))
+2021-08-17 21:02:47 {s0-admin-1} DEBUG c.d.o.d.i.c.m.NodeStateManager - msg
+ DEBUG s0-admin-1 com.datastax.oss.driver.internal.core.metadata.NodeStateManager - [s0] Transitioning Node(endPoint=/127.0.0.1:9042, hostId=null, hashCode=12430378) UNKNOWN=>DOWN (because it was tried as a contact point but failed)
+2021-08-17 21:02:47 {s0-admin-1} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG s0-admin-1 com.datastax.oss.driver.internal.core.context.EventBus - [s0] Firing an instance of class com.datastax.oss.driver.internal.core.metadata.NodeStateEvent: NodeStateEvent(UNKNOWN=>DOWN, Node(endPoint=/127.0.0.1:9042, hostId=null, hashCode=12430378))
+2021-08-17 21:02:47 {s0-admin-1} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG s0-admin-1 com.datastax.oss.driver.internal.core.context.EventBus - [s0] Notifying com.datastax.oss.driver.internal.core.metadata.LoadBalancingPolicyWrapper$$Lambda$288/0x0000000800f55518@1aabdfca of NodeStateEvent(UNKNOWN=>DOWN, Node(endPoint=/127.0.0.1:9042, hostId=null, hashCode=12430378))
+2021-08-17 21:02:47 {s0-admin-1} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG s0-admin-1 com.datastax.oss.driver.internal.core.context.EventBus - [s0] Notifying com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@34ca11d0 of NodeStateEvent(UNKNOWN=>DOWN, Node(endPoint=/127.0.0.1:9042, hostId=null, hashCode=12430378))
+2021-08-17 21:02:47 {s0-admin-1} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG s0-admin-1 com.datastax.oss.driver.internal.core.context.EventBus - [s0] Notifying com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@5785d3e3 of NodeStateEvent(UNKNOWN=>DOWN, Node(endPoint=/127.0.0.1:9042, hostId=null, hashCode=12430378))
+2021-08-17 21:02:47 {s0-admin-1} DEBUG c.d.o.d.i.core.context.EventBus - msg
+ DEBUG s0-admin-1 com.datastax.oss.driver.internal.core.context.EventBus - [s0] Notifying com.datastax.oss.driver.internal.core.util.concurrent.RunOrSchedule$$Lambda$242/0x0000000800f18470@4933fb84 of NodeStateEvent(UNKNOWN=>DOWN, Node(endPoint=/127.0.0.1:9042, hostId=null, hashCode=12430378))
+2021-08-17 21:02:47 {s0-admin-1} DEBUG c.d.o.d.i.c.session.DefaultSession - msg
+ DEBUG s0-admin-1 com.datastax.oss.driver.internal.core.session.DefaultSession - [s0] Initialization failed, force closing
+java.util.concurrent.CompletionException: com.datastax.oss.driver.api.core.AllNodesFailedException: Could not reach any contact point, make sure you've provided valid addresses (showing first 1 nodes, use getAllErrors() for more): Node(endPoint=/127.0.0.1:9042, hostId=null, hashCode=12430378): [com.datastax.oss.driver.api.core.connection.ConnectionInitException: [s0|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (io.netty.channel.StacklessClosedChannelException)]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1137)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2152)
+	at com.datastax.oss.driver.internal.core.control.ControlConnection$SingleThreaded.lambda$init$3(ControlConnection.java:327)
+	at com.datastax.oss.driver.internal.core.control.ControlConnection$SingleThreaded.connect(ControlConnection.java:358)
+	at com.datastax.oss.driver.internal.core.control.ControlConnection$SingleThreaded.lambda$connect$8(ControlConnection.java:398)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478)
+	at io.netty.channel.DefaultEventLoop.run(DefaultEventLoop.java:54)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: com.datastax.oss.driver.api.core.AllNodesFailedException: Could not reach any contact point, make sure you've provided valid addresses (showing first 1 nodes, use getAllErrors() for more): Node(endPoint=/127.0.0.1:9042, hostId=null, hashCode=12430378): [com.datastax.oss.driver.api.core.connection.ConnectionInitException: [s0|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (io.netty.channel.StacklessClosedChannelException)]
+	at com.datastax.oss.driver.api.core.AllNodesFailedException.reword(AllNodesFailedException.java:147)
+	at com.datastax.oss.driver.internal.core.control.ControlConnection$SingleThreaded.lambda$init$3(ControlConnection.java:323)
+	... 10 common frames omitted
+	Suppressed: com.datastax.oss.driver.api.core.connection.ConnectionInitException: [s0|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (io.netty.channel.StacklessClosedChannelException)
+		at com.datastax.oss.driver.internal.core.channel.ProtocolInitHandler$InitRequest.fail(ProtocolInitHandler.java:356)
+		at com.datastax.oss.driver.internal.core.channel.ChannelHandlerRequest.writeListener(ChannelHandlerRequest.java:87)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+		at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:184)
+		at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:95)
+		at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:30)
+		at com.datastax.oss.driver.internal.core.channel.ChannelHandlerRequest.send(ChannelHandlerRequest.java:76)
+		at com.datastax.oss.driver.internal.core.channel.ProtocolInitHandler$InitRequest.send(ProtocolInitHandler.java:193)
+		at com.datastax.oss.driver.internal.core.channel.ProtocolInitHandler.onRealConnect(ProtocolInitHandler.java:124)
+		at com.datastax.oss.driver.internal.core.channel.ConnectInitHandler.lambda$connect$0(ConnectInitHandler.java:57)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+		at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+		... 4 common frames omitted
+		Suppressed: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:9042
+		Caused by: java.net.ConnectException: Connection refused: no further information
+			at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+			at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660)
+			at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:875)
+			at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+			at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+			at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+			at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+			at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+			at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+			at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+			at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: io.netty.channel.StacklessClosedChannelException: null
+		at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0()(Unknown Source)
+2021-08-17 21:02:47 {s0-admin-0} DEBUG c.d.o.d.i.c.session.DefaultSession - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.session.DefaultSession - [s0] Starting forced shutdown (was not closed before)
+2021-08-17 21:02:47 {s0-admin-0} DEBUG c.d.o.d.i.core.session.PoolManager - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.session.PoolManager - [s0] Starting forced shutdown (was not closed before)
+2021-08-17 21:02:47 {s0-admin-0} DEBUG c.d.o.d.i.c.metadata.MetadataManager - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.metadata.MetadataManager - [s0] Closing
+2021-08-17 21:02:47 {s0-admin-1} DEBUG c.d.o.d.i.c.c.ControlConnection - msg
+ DEBUG s0-admin-1 com.datastax.oss.driver.internal.core.control.ControlConnection - [s0] Starting shutdown
+2021-08-17 21:02:47 {s0-admin-1} DEBUG c.d.o.d.i.c.c.ControlConnection - msg
+ DEBUG s0-admin-1 com.datastax.oss.driver.internal.core.control.ControlConnection - [s0] Shutdown complete
+2021-08-17 21:02:47 {s0-admin-0} DEBUG c.d.o.d.i.core.session.PoolManager - msg
+ DEBUG s0-admin-0 com.datastax.oss.driver.internal.core.session.PoolManager - [s0] Shutdown complete
+2021-08-17 21:02:49 {s0-io-0} DEBUG io.netty.buffer.PoolThreadCache - msg
+ DEBUG s0-io-0 io.netty.buffer.PoolThreadCache - Freed 1 thread-local buffer(s) from thread: s0-io-0
+2021-08-17 21:02:49 {globalEventExecutor-1-3} DEBUG c.d.o.d.i.c.session.DefaultSession - msg
+ DEBUG globalEventExecutor-1-3 com.datastax.oss.driver.internal.core.session.DefaultSession - Closing session s0 (0 live instances)
+2021-08-17 21:02:49 {com.github.SakuraMatrix.p1lanchipham.App.main()} WARN  o.s.c.a.AnnotationConfigApplicationContext - msg
+ WARN com.github.SakuraMatrix.p1lanchipham.App.main() org.springframework.context.annotation.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appConfig': Unsatisfied dependency expressed through field 'categoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryService' defined in file [C:\Users\LanChi\IdeaProjects\p1-lanchipham\target\classes\com\github\SakuraMatrix\p1lanchipham\service\CategoryService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryRepository' defined in file [C:\Users\LanChi\IdeaProjects\p1-lanchipham\target\classes\com\github\SakuraMatrix\p1lanchipham\repository\CategoryRepository.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'session' defined in com.github.SakuraMatrix.p1lanchipham.AppConfig: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.datastax.oss.driver.api.core.CqlSession]: Circular reference involving containing bean 'appConfig' - consider declaring the factory method as static for independence from its containing instance. Factory method 'session' threw exception; nested exception is com.datastax.oss.driver.api.core.AllNodesFailedException: Could not reach any contact point, make sure you've provided valid addresses (showing first 1 nodes, use getAllErrors() for more): Node(endPoint=/127.0.0.1:9042, hostId=null, hashCode=12430378): [com.datastax.oss.driver.api.core.connection.ConnectionInitException: [s0|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (io.netty.channel.StacklessClosedChannelException)]

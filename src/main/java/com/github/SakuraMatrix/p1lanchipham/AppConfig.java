@@ -26,38 +26,37 @@ public class AppConfig {
 
         @Bean
         public DisposableServer server() throws URISyntaxException {
-            Path indexHTML = Paths.get(App.class.getResource("/index.html").toURI());
-            Path errorHTML = Paths.get(App.class.getResource("/error.html").toURI());
+                Path indexHTML = Paths.get(App.class.getResource("/index.html").toURI());
+                Path errorHTML = Paths.get(App.class.getResource("/error.html").toURI());
 
-            return HttpServer.create()
-                    .host("localhost")
-                    .port(8080)
-                    .route(routes ->
-                            routes.get("/categories", (req, res) ->
-                                            res.send(categoryService.getAll()
-                                                    .map(App::toByteBuf)
-                                                    .log("http-server")))
-                                    .get("/categories/{param}", (req, res) ->
-                                            res.send(categoryService.get(req.param("param"))
-                                                    .map(App::toByteBuf)
-                                                    .log("http-server")))
-                                    .put("/categories/{param}", (req, res) ->
-                                            res.send(req.receive().asString()
-                                                    .map(App::readCategory)
-                                                    .map(categoryService::setInitialValues)
-                                                    .map(App::toByteBuf)
-                                                    .log("http-server")))
-                                    .put("/categories/{param}", (req, res) ->
-                                            res.send(req.receive().asString()
-                                                    .map(App::readCategory)
-                                                    .map(categoryService::updateCurrentUse)
-                                                    .map(App::toByteBuf)
-                                                    .log("http-server")))
-                                    .get("/", (req, res) ->
-                                            res.sendFile(indexHTML))
-                                    .get("/error", (req, res) ->
-                                            res.status(404).addHeader("Message", "Aw, don't cry. It's just an error.")
-                                                    .sendFile(errorHTML)))
-                    .bindNow();
+                return HttpServer.create()
+                        .port(8080)
+                        .route(routes ->
+                                routes.get("/categories", (req, res) ->
+                                                res.send(categoryService.getAll()
+                                                        .map(App::toByteBuf)
+                                                        .log("http-server")))
+                                        .get("/categories/{id}", (req, res) ->
+                                                res.send(categoryService.get(req.param("id"))
+                                                        .map(App::toByteBuf)
+                                                        .log("http-server")))
+                                        .put("/categories/{id}", (req, res) ->
+                                                res.send(req.receive().asString()
+                                                        .map(App::readCategory)
+                                                        .map(categoryService::setInitialValues)
+                                                        .map(App::toByteBuf)
+                                                        .log("http-server")))
+                                        .put("/categories/{id}", (req, res) ->
+                                                res.send(req.receive().asString()
+                                                        .map(App::readCategory)
+                                                        .map(categoryService::updateCurrentUse)
+                                                        .map(App::toByteBuf)
+                                                        .log("http-server")))
+                                        .get("/", (req, res) ->
+                                                res.sendFile(indexHTML))
+                                        .get("/error", (req, res) ->
+                                                res.status(404).addHeader("Message", "Aw, don't cry. It's just an error.")
+                                                        .sendFile(errorHTML)))
+                        .bindNow();
         }
 }

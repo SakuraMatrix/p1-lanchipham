@@ -20,8 +20,9 @@ public class App {
         log.info("Starting com.github.SakuraMatrix.p1-lanchipham...");
 
         AnnotationConfigApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        log.info("building disposable server...");
         appContext.getBean(DisposableServer.class).onDispose().block();
-        //appContext.close();
+        appContext.close();
     }
 
     public static final ObjectMapper objMapper = new ObjectMapper();
@@ -45,9 +46,10 @@ public class App {
             String name = params[1].split("=")[1];
             double budget = Double.parseDouble(params[2].split("=")[1]);
             double alert = Double.parseDouble(params[3].split("=")[1]);
-            double currentUse = Double.parseDouble(params[4].split("=")[1]);
+            double current = Double.parseDouble(params[4].split("=")[1]);
             String status = params[5].split("=")[1];
-            category = new Category(id, name, budget, alert, currentUse, status);
+            category = new Category(id, name, budget, alert, current, status);
         }
         return category;
-    }}
+    }
+}

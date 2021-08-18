@@ -22,15 +22,15 @@ public class enterExp {
         System.out.println("Medical: $");
         double medical = sc.nextDouble();
         System.out.println(medical);
-        System.out.println("Savings: $");
-        double miscellaneous = sc.nextDouble();
-        System.out.println(miscellaneous);
-        System.out.println("Entertainment: $");
-        double entertainment = sc.nextDouble();
-        System.out.println(entertainment);
         System.out.println("Personal Care: $");
         double personalCare = sc.nextDouble();
         System.out.println(personalCare);
+        System.out.println("Entertainment: $");
+        double entertainment = sc.nextDouble();
+        System.out.println(entertainment);
+        System.out.println("Miscellaneous: $");
+        double miscellaneous = sc.nextDouble();
+        System.out.println(miscellaneous);
         sc.close();
     }
 }
