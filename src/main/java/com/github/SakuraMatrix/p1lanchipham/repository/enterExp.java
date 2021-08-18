@@ -2,6 +2,7 @@ package com.github.SakuraMatrix.p1lanchipham.repository;
 
 import java.util.Scanner;
 
+//method to ask user about their budget amounts for each category
 public class enterExp {
     public static void categories(){
         System.out.println("Welcome to the BudgetReminder.");

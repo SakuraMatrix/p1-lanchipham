@@ -14,18 +14,32 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.net.URISyntaxException;
 
+/**
+ * The Budget Reminder is an application which allows a user to
+ * set up a budget amount for each expense category. It also lets 
+ * the user set up alert amounts and a status update to warn her/her 
+ * when s/he is close to the budget limit. 
+ * 
+ * @author LanChi
+ * @version 1.0
+ * @since 08-06-2021
+ */
 public class App {
 
     private static final Logger log = LoggerFactory.getLogger(App.class);
     public static void main(String[] args) throws ClassNotFoundException, URISyntaxException {       
         log.info("Starting com.github.SakuraMatrix.p1-lanchipham...");
 
+        /**
+         * instantiating a Spring IoC container using ApplicationContext
+         */
         AnnotationConfigApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
         log.info("building disposable server...");
         appContext.getBean(DisposableServer.class).onDispose().block();
         appContext.close();
     }
 
+    /**method to take in and write out an object's byte array */
     public static final ObjectMapper objMapper = new ObjectMapper();
     public static ByteBuf toByteBuf(Object obj) {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
@@ -37,6 +51,8 @@ public class App {
         return ByteBufAllocator.DEFAULT.buffer().writeBytes(out.toByteArray());
     }
 
+    /**method to split the string of the get url and 
+     * place each component into its own variable */
     public static Category readCategory(String string) {
         Category category = null;
         try {

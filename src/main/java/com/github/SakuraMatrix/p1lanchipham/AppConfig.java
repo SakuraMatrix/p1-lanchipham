@@ -17,13 +17,18 @@ import java.nio.file.Paths;
 @ComponentScan
 public class AppConfig {
 
+        /** Annotation to autowire the cateogry service */
         @Autowired CategoryService categoryService;
 
-        // @Bean
-        // public static CqlSession session() {
-        //         return CqlSession.builder().build();
-        // }
+        /** Bean annotation for building a CQL session */
+        @Bean
+        public static CqlSession session() {
+                return CqlSession.builder().build();
+        }
 
+        /** Bean annotation for creating a disposable server
+         * Also includes all routes 
+         */
         @Bean
         public DisposableServer server() throws URISyntaxException {
                 Path indexHTML = Paths.get(App.class.getResource("/index.html").toURI());

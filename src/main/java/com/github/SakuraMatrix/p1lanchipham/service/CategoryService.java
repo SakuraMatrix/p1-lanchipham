@@ -8,6 +8,9 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+    /** 
+     * Service layer with methods
+     */
     @Service
     public class CategoryService {
         Logger log = LoggerFactory.getLogger(CategoryService.class);

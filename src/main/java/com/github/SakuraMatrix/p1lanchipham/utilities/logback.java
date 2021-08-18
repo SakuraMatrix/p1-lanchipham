@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/** Method for logging to an external file */
 public class logback {
   public void writeToFile() throws IOException{ 
     try{

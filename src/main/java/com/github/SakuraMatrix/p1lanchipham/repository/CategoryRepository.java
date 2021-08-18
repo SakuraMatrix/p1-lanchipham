@@ -19,18 +19,27 @@ public class CategoryRepository {
         this.session = session;
     }
 
+    //method to get all categories
     public Flux<Category> getAll() {
         log.info("retrieving all categories from database...");
         return Flux.from(session.executeReactive("SELECT * FROM budget.categories"))
-                .map(row -> new Category(row.getInt("categoryId"), row.getString("name"), row.getDouble("budgetAmount"), row.getDouble("alertAmount"), row.getDouble("currentUse"), row.getString("status")));
+                .map(row -> new Category(
+                    row.getInt("categoryId"), 
+                    row.getString("name"), 
+                    row.getDouble("budgetAmount"), 
+                    row.getDouble("alertAmount"), 
+                    row.getDouble("currentUse"), 
+                    row.getString("status")));
     }
 
+    // method to get one category
     public Mono<Category> get(int id) {
         log.info("retrieving category from database by categoryId...");
         return Mono.from(session.executeReactive("SELECT * FROM budget.categories WHERE categoryId = " + id))
                 .map(row -> new Category(row.getInt("categoryId"), row.getString("name"), row.getDouble("budgetAmount"), row.getDouble("alertAmount"), row.getDouble("currentUse"), row.getString("status")));
     }
 
+    // method to set values for budget amount, alert amount, and current use
     public Category setInitialValues(Category category) {
         log.info("setting initial values for budget, alert, and current use...");
         SimpleStatement setInitial = SimpleStatement.builder("INSERT budget.categories (budgetAmount, alertAmount, currentUse) values (?, ?, ?)")
@@ -40,6 +49,7 @@ public class CategoryRepository {
         return category;
     }
 
+    // method to update current use category
     public Category updateCurrentUse(Category category) {
         log.info("updating current use category...");
         SimpleStatement updateQuery = SimpleStatement.builder("UPDATE budget.categories SET currentUse = ? WHERE categoryId = ? IF EXISTS")

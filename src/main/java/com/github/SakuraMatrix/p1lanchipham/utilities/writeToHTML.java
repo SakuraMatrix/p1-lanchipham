@@ -5,6 +5,7 @@ import org.apache.commons.io.FileUtils;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
+/** Method for replacing template HTML with user input */
 public class writeToHTML {
     public static void main(String[]args) throws IOException{
         File htmlTemplateFile = new File("src/main/resources/template.html");
@@ -12,7 +13,7 @@ public class writeToHTML {
 
         String body = "This is the body";
         htmlString = htmlString.replace("$body", body);
-        //TODO: replace with individual tags
+        //TO DO: replace with individual tags
         File newHtmlFile = new File("C:\\Users\\LanChi\\Desktop\\budget.html");
         FileUtils.writeStringToFile(newHtmlFile, htmlString, StandardCharsets.UTF_8.name());
 

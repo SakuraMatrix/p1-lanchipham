@@ -10,9 +10,11 @@ public class Category {
     private double current;
     private String status;
 
+    //no-args constructor
     public Category() {
     }
 
+    //constructor
 public Category(int id, String name, double budget, double alert, double current, String status){
     this.id = id;
     this.name = name;
@@ -22,6 +24,7 @@ public Category(int id, String name, double budget, double alert, double current
     this.status = status;
 }
 
+    /**method to convert returned object to a string */
     @Override
     public String toString() {
         return "Item{" +
@@ -52,6 +55,7 @@ public Category(int id, String name, double budget, double alert, double current
         return Objects.hash(id, name, budget, alert, current, status);
     }
 
+    /**lines 56-102 are the setters and getters for the object's components */
     public int getId() {
         return id;
     }
@@ -98,6 +102,22 @@ public Category(int id, String name, double budget, double alert, double current
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    /** method to change the status of a user's 
+     * spending threshold based on budget, 
+     * alert, and current use amounts
+     */
+    public void changeStatus(double budget, double alert, double current, String status) {
+        if (budget == current) {
+        status = "limit reached!";
+        } else if (current < alert) {
+            status = "good";
+        } else if (budget < current) {
+            status = "over budget!";
+        }else {
+            status = "nearing limit";
+        }
     }
 }
 
