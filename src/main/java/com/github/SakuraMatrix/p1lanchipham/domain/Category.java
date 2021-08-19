@@ -14,7 +14,7 @@ public class Category {
     public Category() {
     }
 
-    //constructor
+    // args constructor
 public Category(int id, String name, double budget, double alert, double current, String status){
     this.id = id;
     this.name = name;

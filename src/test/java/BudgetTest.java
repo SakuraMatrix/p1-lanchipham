@@ -1,39 +1,50 @@
-import org.junit.Assert;
-import org.junit.Test;
-import com.datastax.oss.driver.api.core.CqlSession;
-import com.datastax.oss.driver.api.core.cql.ResultSet;
-import org.cassandraunit.spring.CassandraDataSet;
-import org.cassandraunit.spring.CassandraUnitTestExecutionListener;
-import org.cassandraunit.spring.EmbeddedCassandra;
-import org.cassandraunit.utils.EmbeddedCassandraServerHelper;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.test.context.TestExecutionListeners;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+// import org.junit.Test;
+// import org.cassandraunit.spring.CassandraDataSet;
+// //import org.cassandraunit.spring.CassandraUnitTestExecutionListener;
+// import org.junit.runner.RunWith;
+// //import org.springframework.test.context.TestExecutionListeners;
+// import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+// import reactor.core.publisher.Flux;
+// import com.github.SakuraMatrix.p1lanchipham.AppConfig;
+// import org.junit.jupiter.api.BeforeAll;
+// //import org.junit.jupiter.api.Test;
+// import org.junit.jupiter.api.TestInstance;
+// import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.context.ApplicationContext;
+// import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
+// import org.springframework.test.web.reactive.server.WebTestClient;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
-import reactor.core.publisher.Flux;
+// @RunWith(SpringJUnit4ClassRunner.class)
+// @CassandraDataSet(value = { "budget.cql" })
+// @SpringJUnitConfig(classes = AppConfig.class)
+// @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@TestExecutionListeners({ CassandraUnitTestExecutionListener.class })
-@CassandraDataSet(value = { "budget.cql" })
-@EmbeddedCassandra
+// public class BudgetTest {
 
-public class BudgetTest {
+//   @Autowired
+//   ApplicationContext context;
 
-    @Test
-    public void testFlux() {
-      Flux<String> flux = Flux.just("Spring 5");
-      flux.subscribe(System.out::println);
-    }
+//   WebTestClient client;
 
-    @Test
-    public void startAndExecuteCqlScript() throws Exception {
-        CqlSession cs = EmbeddedCassandraServerHelper.getSession();
+//   @BeforeAll
+//   public void setup() {
+//     this.client = WebTestClient.bindToApplicationContext(this.context).configureClient().build();
+//   }
 
-        ResultSet rs = cs.execute("SELECT * FROM budget.categories WHERE categoryId='8'");
-        assertThat(rs.iterator().next().getString("name"), is("miscellaneous"));
-    }
+//   @Test
+//   public void getAllCategoriesOK() throws Exception {
+//     this.client.get().uri("/categories").exchange().expectStatus().isOk();
+//   }
 
-}
+//   @Test
+//   public void getOneCategoryOk() throws Exception {
+//     this.client.get().uri("/categories/8").exchange().expectStatus().isOk();
+//   }
+
+//   @Test
+//   public void testFlux() {
+//   Flux<String> flux = Flux.just("Spring 5");
+//   flux.subscribe(System.out::println);
+//   }
+
+// }
