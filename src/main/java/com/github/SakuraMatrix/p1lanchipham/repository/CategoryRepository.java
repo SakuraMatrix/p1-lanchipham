@@ -32,7 +32,7 @@ public class CategoryRepository {
                     row.getString("status")));
     }
 
-    // method to get one category
+    //method to get one category
     public Mono<Category> get(int id) {
         log.info("retrieving category from database by categoryId...");
         return Mono.from(session.executeReactive("SELECT * FROM budget.categories WHERE categoryId = " + id))
