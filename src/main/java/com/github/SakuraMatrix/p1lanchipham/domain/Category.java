@@ -24,7 +24,6 @@ public Category(int id, String name, double budget, double alert, double current
     this.status = status;
 }
 
-    /**method to convert returned object to a string */
     @Override
     public String toString() {
         return "Item{" +

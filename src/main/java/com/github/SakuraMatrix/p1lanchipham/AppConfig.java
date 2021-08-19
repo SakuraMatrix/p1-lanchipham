@@ -45,6 +45,14 @@ public class AppConfig {
                                                 res.send(categoryService.get(req.param("id"))
                                                         .map(App::toByteBuf)
                                                         .log("http-server")))
+                                        .post("/categories", (req, res) -> 
+                                                res.send(req
+                                                .receive()
+                                                .asString()
+                                                .map(App::readCategory)
+                                                .map(categoryService::create)
+                                                .map(App::toByteBuf)
+                                                .log("https-server")))
                                         .put("/categories/{id}", (req, res) ->
                                                 res.send(req.receive().asString()
                                                         .map(App::readCategory)

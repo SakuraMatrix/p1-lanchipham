@@ -39,6 +39,16 @@ public class CategoryRepository {
                 .map(row -> new Category(row.getInt("categoryId"), row.getString("name"), row.getDouble("budgetAmount"), row.getDouble("alertAmount"), row.getDouble("currentUse"), row.getString("status")));
     }
 
+    //method to create a category
+    public Category create(Category category) {
+        SimpleStatement createQuery = SimpleStatement.builder(
+                "INSERT INTO budget.categories (categoryId, name, budgetAmount, alertAmount, currentUse, status) values (?,?,?,?,?,?)")
+                .addPositionalValues(category.getId(), category.getName(), category.getBudget(), category.getAlert(), category.getCurrent(), category.getStatus())
+                .build();
+        Flux.from(session.executeReactive(createQuery)).subscribe();
+        return category;
+    }
+
     // method to set values for budget amount, alert amount, and current use
     public Category setInitialValues(Category category) {
         log.info("setting initial values for budget, alert, and current use...");

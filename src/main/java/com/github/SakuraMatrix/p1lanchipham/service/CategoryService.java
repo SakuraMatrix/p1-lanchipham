@@ -30,6 +30,11 @@ import reactor.core.publisher.Mono;
             return categoryRepository.get(Integer.parseInt(id));
         }
 
+        public Category create(Category category) {
+            log.info("creating new category...");
+            return categoryRepository.create(category);
+        }
+
         public Category setInitialValues(Category category) {
             log.info("setting initial values for budget amount, alert amount, and current use...");
             return categoryRepository.setInitialValues(category);

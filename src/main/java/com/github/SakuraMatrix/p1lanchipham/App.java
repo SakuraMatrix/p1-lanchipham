@@ -1,10 +1,13 @@
 package com.github.SakuraMatrix.p1lanchipham;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.SakuraMatrix.p1lanchipham.domain.Category;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
+
+import org.json.JSONException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -27,7 +30,7 @@ import java.net.URISyntaxException;
 public class App {
 
     private static final Logger log = LoggerFactory.getLogger(App.class);
-    public static void main(String[] args) throws ClassNotFoundException, URISyntaxException {       
+    public static void main(String[] args) throws ClassNotFoundException, URISyntaxException, JsonProcessingException, JsonMappingException {       
         log.info("Starting com.github.SakuraMatrix.p1-lanchipham...");
 
         /**
@@ -37,6 +40,10 @@ public class App {
         log.info("building disposable server...");
         appContext.getBean(DisposableServer.class).onDispose().block();
         appContext.close();
+        //String str = "{\"id\": 9, \"name\": \"eating out\", \"budget\": 100, \"alert\": 80, \"current\": 75, \"status\": \"good\"}";
+        // System.out.println(readCategory(str));
+        // Category category = objMapper.readValue(str, Category.class);
+        // System.out.println(category);
     }
 
     /**method to take in and write out an object's byte array */
