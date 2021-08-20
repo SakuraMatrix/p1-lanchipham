@@ -4,6 +4,13 @@ Budget app with status reminders alerting users when they are nearing their budg
 # Proposal 
 The Budget Reminder is an app where users can lay out a budget, track their expenses, and set up reminders when they are close to reaching their limit for a budget category. The theme will be "Status Notifiers for Keeping a Budget". For example, if someone sets a limit of $100 for entertainment monthly, but they’ve already spent $90 before the month is up, then the app will update their budget status to notify them that they have almost reached their budget limit. 
 
+# User Story
+As a **Budget-minded person** who wants to spend more wisely,
+
+   I want to be able to **set up budget amounts and alert amounts** for each of my expenses,
+
+   So that I can be **notified when I am reaching my threshold for a budget** in each category.
+
 # Users will be able to
 1)	Create a category
 2)	Delete a category
