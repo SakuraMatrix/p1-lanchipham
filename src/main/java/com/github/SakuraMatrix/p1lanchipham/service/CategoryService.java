@@ -45,4 +45,8 @@ import reactor.core.publisher.Mono;
             return categoryRepository.updateCurrentUse(category);
         }
 
+        public void deleteCategory(String id){
+            categoryRepository.deleteCategory(Integer.parseInt(id));
+        }
+
     }

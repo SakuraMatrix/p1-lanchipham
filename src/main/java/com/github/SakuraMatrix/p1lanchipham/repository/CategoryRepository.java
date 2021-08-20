@@ -69,6 +69,13 @@ public class CategoryRepository {
         return category;
     }
 
+    public void deleteCategory(int id){
+        SimpleStatement deleteQuery = SimpleStatement.builder("DELETE FROM budget.categories WHERE categoryId = ? IF EXISTS")
+        .addPositionalValue(id)
+        .build();
+        Flux.from(session.executeReactive(deleteQuery)).subscribe();
+    }
+
     // public Category update(int categoryId) {
     //     SimpleStatement updateQuery = update(categoryId)
     //             .setColumn("currentUse", bindMarker())

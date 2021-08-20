@@ -53,13 +53,13 @@ public class AppConfig {
                                                 .map(categoryService::create)
                                                 .map(App::toByteBuf)
                                                 .log("https-server")))
-                                        .put("/categories/{id}", (req, res) ->
+                                        .put("/categories/values/{id}", (req, res) ->
                                                 res.send(req.receive().asString()
                                                         .map(App::readCategory)
                                                         .map(categoryService::setInitialValues)
                                                         .map(App::toByteBuf)
                                                         .log("http-server")))
-                                        .put("/categories/{id}", (req, res) ->
+                                        .put("/categories/current/{id}", (req, res) ->
                                                 res.send(req.receive().asString()
                                                         .map(App::readCategory)
                                                         .map(categoryService::updateCurrentUse)
@@ -69,7 +69,12 @@ public class AppConfig {
                                                 res.sendFile(indexHTML))
                                         .get("/error", (req, res) ->
                                                 res.status(404).addHeader("Message", "Aw, don't cry. It's just an error.")
-                                                        .sendFile(errorHTML)))
+                                                        .sendFile(errorHTML))
+                                        .delete("/categories/{id}", (req, res) ->{
+                                                categoryService.deleteCategory(req.param("id"));
+                                                return res.status(200)
+                                                .addHeader("Message", "It has been terminated.");
+                                        } ))
                         .bindNow();
         }
 }

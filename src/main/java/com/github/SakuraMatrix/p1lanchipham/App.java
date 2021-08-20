@@ -41,7 +41,7 @@ public class App {
         appContext.getBean(DisposableServer.class).onDispose().block();
         appContext.close();
         //String str = "{\"id\": 9, \"name\": \"eating out\", \"budget\": 100, \"alert\": 80, \"current\": 75, \"status\": \"good\"}";
-        // System.out.println(readCategory(str));
+        //System.out.println(readCategory(str));
         // Category category = objMapper.readValue(str, Category.class);
         // System.out.println(category);
     }
