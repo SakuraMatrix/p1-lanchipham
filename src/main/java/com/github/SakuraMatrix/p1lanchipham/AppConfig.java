@@ -17,7 +17,7 @@ import java.nio.file.Paths;
 @ComponentScan
 public class AppConfig {
 
-        /** Annotation to autowire the cateogry service */
+        /** Annotation to autowire the category service */
         @Autowired CategoryService categoryService;
 
         /** Bean annotation for building a CQL session */
