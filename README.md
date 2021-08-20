@@ -1,15 +1,16 @@
 # p1-lanchipham
-Budget app with gentle reminders to stay in budget
+Budget app with status reminders alerting users when they are nearing their budget limit or have reached/exceeded the budget limit.
 
 # Proposal 
-The Budget Reminder is an app where users can lay out a budget, track their expenses, and set up reminders when they are close to reaching their limit for a budget category. The theme will be Gentle Reminders for Keeping a Budget. For example, if someone sets a limit of $100 for entertainment monthly, but they’ve already spent $90 before the month is up, then the app will send them a message notifying them that they have almost reached their budget limit. If they want to overspend for one category, then the app will prompt them to decrease the budget limit from another category (excluding non-negotiable categories like housing). This will remind users that overspending in one category means that another category will be impacted. 
+The Budget Reminder is an app where users can lay out a budget, track their expenses, and set up reminders when they are close to reaching their limit for a budget category. The theme will be "Status Notifiers for Keeping a Budget". For example, if someone sets a limit of $100 for entertainment monthly, but they’ve already spent $90 before the month is up, then the app will update their budget status to notify them that they have almost reached their budget limit. 
 
 # Users will be able to
-1)	Enter in their monthly income
-2)	Set up fixed monthly expenses such as housing or savings.
-3)	Set up budget limits for discretionary categories such as entertainment or personal care.
-4)	Set up reminders for when they are about to reach a budget limit.
-5)	“Borrow” from a discretionary category if they want to overspend their budget in another category. 
+1)	Create a category
+2)	Delete a category
+3)	Set up budget limits for each category.
+4)	Set up alert amounts for when they are about to reach a budget limit.
+5)	Enter in their current use for each category.
+6) View status reminders for how close they are to their budget limit. 
 
 #  Budget categories
 1)	Housing
@@ -17,23 +18,21 @@ The Budget Reminder is an app where users can lay out a budget, track their expe
 3)	Food
 4)	Transportation
 5)	Medical
-6)	Savings
-7)	Debt
-8)	Entertainment
-9)	Personal Care
-10)	Miscellaneous
+6)	Entertainment
+7)	Personal Care
+8)	Miscellaneous
 
 # Technology Stack
 1) JUnit
 2) Maven 
-3) Java 16
+3) Java 8+
 4) Reactor Netty 
 5) Spring Framework
-6) Amazon Web Services 
+6) Spring Beans/Core/Context
 7) GitHub (SakuraMatrix)
 8) SLF4J: Logback Classic
 9) Apache Cassandra w/ Datastax driver
 
 
 # How to use
-Run ```mvn clean exec:java``` in package directory
+Run ```mvn compile exec:java``` in package directory

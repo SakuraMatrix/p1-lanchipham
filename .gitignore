@@ -1,7 +1,9 @@
 .idea/
+.vscode/
 .settings
 .project
 target/
 logs/
 bin/
 events.log
+.classpath
